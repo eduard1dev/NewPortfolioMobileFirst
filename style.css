@@ -33,6 +33,12 @@ ul {
     list-style-type: none;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 .header {
     height: var(--header-height);
     background-color: transparent;
@@ -52,6 +58,7 @@ ul {
 .name {
     text-decoration: none;
     color: var(--white-color);
+    margin-left: 0.5rem;
 }
 
 .menu-options{
@@ -70,19 +77,24 @@ ul {
         display: none;
     }
     .name {
-        margin-right: 5rem;
+        margin-right: 0.5rem;
+        margin-left: 0;
     }
 }
 
 .main_container {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
+    flex: 1;
+    padding-bottom: 2rem;
+    background-image: url('dev-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #dev-name {
     color: var(--white-color);
-    padding-top: 7rem;
     font-size: 2.5rem;
     text-align: center;
     line-height: 3.5rem;
