@@ -2,7 +2,9 @@
     --header-height: 3rem;
 
     /* === Colors === */
-    --first-color: hsl(0, 0%, 10%);
+    --first-color: rgba(0, 0, 0, 80%);
+    --second-color: rgba(0, 0, 0, 1%);
+    --third-color: rgba(255, 255, 255, 20%);
     --white-color: white
 }
 
@@ -24,6 +26,14 @@ html {
     scroll-behavior: smooth;
 }
 
+h1, h2, p {
+    text-align: justify;
+}
+
+h1 {
+    line-height: 3.5rem;
+}
+
 li {
     text-decoration: none;
 }
@@ -36,16 +46,20 @@ ul {
 .container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+}
+
+.sec-header {
+    position: fixed;
+    width: 100%;
 }
 
 .header {
     height: var(--header-height);
-    background-color: transparent;
+    background-color: var(--first-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: var(--white-color)
+    color: var(--white-color);
 }
 
 .nav-menu-button {
@@ -82,15 +96,16 @@ ul {
     }
 }
 
-.main_container {
+.main {
     display: flex;
     align-items: flex-end;
     justify-content: center;
     flex: 1;
     padding-bottom: 2rem;
-    background-image: url('dev-image.jpg');
+    background-image: url('./assets/dev-image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 #dev-name {
@@ -98,4 +113,17 @@ ul {
     font-size: 2.5rem;
     text-align: center;
     line-height: 3.5rem;
+}
+
+.sec-about {
+    display: flex;
+    padding: 3rem 2rem;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
