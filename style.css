@@ -4,7 +4,7 @@
     /* === Colors === */
     --first-color: rgba(0, 0, 0, 80%);
     --second-color: rgba(0, 0, 0, 20%);
-    --third-color: rgba(0, 0, 0, .8);
+    --third-color: rgba(0, 0, 0, 1);
     --white-color: white
 }
 
@@ -47,7 +47,8 @@ header {
     padding: 0 1.5rem;
     width: 100%;
     font-size: 2rem;
-    color: white
+    color: white;
+    z-index: 20;
 }
 
 button {
@@ -152,17 +153,39 @@ button:hover {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: blanchedalmond;
+    background-color: var(--third-color);
 }
 
 .open {
     display: flex;
     flex-direction: column;
+    width: 100%;
     padding: 1rem 1rem;
+    padding-top: var(--header-height);
     align-items: center;
     z-index: 1;
+    animation: onLoadSlide 0.7s
 }
 
 .menu-button {
     line-height: 3rem;
+    color: #32CD32
+}
+
+.about {
+    display: flex;
+}
+
+.about-container {
+    display: flex;
+    background-color: #32CD32;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.about-container p {
+    max-width: 400px;
 }
