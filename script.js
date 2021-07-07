@@ -1,5 +1,3 @@
-let isMenuOpen = false;
-
 const menu = document.querySelector('.menu'),
       menuContainer = document.querySelector('.menu-container'),
       menu_buttons = document.querySelectorAll('.menu-button'),
@@ -10,22 +8,26 @@ const menu = document.querySelector('.menu'),
       section_about = document.querySelector("#sec-about")
       
 
-menu.addEventListener('click', () => {
+let isMenuOpen = false;
+const handleClickMenu = () => {
     if (isMenuOpen) {
         menuContainer.classList.toggle('open')
-        menu.classList.remove('rotate')
+        menu.classList.toggle('rotate')
         isMenuOpen = false
     } else {
         menuContainer.classList.toggle('open')
-        menu.classList.add('rotate')
+        menu.classList.toggle('rotate')
         isMenuOpen = true
     }
+}      
+
+menu.addEventListener('click', () => {
+    handleClickMenu()
 })
 
 menu_buttons.forEach(element => {
     element.addEventListener('click', () => {
-        menuContainer.classList.toggle('open')
-        isMenuOpen = false
+        handleClickMenu()
     })
 });
 

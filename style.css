@@ -74,8 +74,9 @@ button:hover {
     z-index: 11;
 }
 
-.menu:hover {
-    transform: scale(1.1);
+.rotate {
+    transform: rotateZ(-70deg);
+    transition: 0.5s;
 }
 
 .container {
@@ -99,6 +100,20 @@ button:hover {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
+}
+
+@media screen and (min-width: 738px) {
+    .sec-hero {
+        background-position: right center;
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: 0;
+        padding-left: 20%;
+    }
+}
+
+.hero-container {
+    max-width: 1280px;
 }
 
 .title {
@@ -167,11 +182,6 @@ button:hover {
     animation: onLoadSlide 0.7s
 }
 
-.menu .rotate {
-    transform: rotateZ(70deg);
-    transition: ease-in 1.5s;
-}
-
 .menu-button {
     line-height: 3rem;
     color: #32CD32
@@ -194,3 +204,28 @@ button:hover {
 .about-container p {
     max-width: 400px;
 }
+
+.sec-contact {
+    padding: 5rem 1.5rem 15rem;
+    height: 100vh;
+}
+
+.social-button {
+    border-color: transparent;
+    background-color: transparent;
+    padding: 0 0
+}
+
+.contact-container {
+    display: flex;
+    background-color: #32CD32;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
