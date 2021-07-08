@@ -5,7 +5,8 @@ const menu = document.querySelector('.menu'),
       about_button = document.querySelector('#about_button'),
       contact_button = document.querySelector('#contact_button'),
       section_hero = document.querySelector("#sec-hero"),
-      section_about = document.querySelector("#sec-about")
+      section_about = document.querySelector("#sec-about"),
+      social_buttons = document.querySelectorAll('.social-button')
       
 
 let isMenuOpen = false;
@@ -30,8 +31,6 @@ menu_buttons.forEach(element => {
         handleClickMenu()
     })
 });
-
-
 
 
 
