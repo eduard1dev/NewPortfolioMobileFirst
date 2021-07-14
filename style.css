@@ -261,7 +261,7 @@ section.sec-projects {
     padding: 1rem 0
 }
 
-img.banner1-image {
+img.mobile-image {
     flex: 1;
     visibility: hidden;
     object-fit: contain;
