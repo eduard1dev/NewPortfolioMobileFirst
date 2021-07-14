@@ -242,7 +242,7 @@ section.sec-projects {
     align-items: center;
 }
 
-.banner-container {
+#findMovie-container {
     display: flex;
     flex-direction: column;
     position: relative;
