@@ -242,13 +242,25 @@ section.sec-projects {
     align-items: center;
 }
 
-#findMovie-container {
+#projects-title {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    border: solid 2px white;
+    padding: 0.3rem 0;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+}
+
+.bannerMobile-container {
     display: flex;
     flex-direction: column;
     position: relative;
     width: 60vw;
     height: 110vw;
-    max-height: 624px;
+    max-height: 610px;
     overflow: hidden;
     max-width: 324px;
 }
@@ -258,7 +270,7 @@ section.sec-projects {
     color: white;
     font-size: 1.25rem;
     align-self: center;
-    padding: 1rem 0
+    margin: 2rem 0;
 }
 
 img.mobile-image {
@@ -268,11 +280,25 @@ img.mobile-image {
     opacity: 0;
     width: 100%;
     position: absolute;
-    border-radius: 1.4rem;
+    border-radius: 1rem;
 }
 
 img.image-selected {
     visibility: visible;
     opacity: 1;
     transition: 1.5s;
+}
+
+#plantmanager-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 60vw;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#plantmanager-container img {
+    border-radius: 1rem;
+    max-width: 60vw;
 }

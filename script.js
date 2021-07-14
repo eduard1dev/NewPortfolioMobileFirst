@@ -42,7 +42,7 @@ setInterval(() => {
     mobile_images[i].classList.remove('image-selected')
 
     const maxLength = mobile_images.length
-    if (i === maxLength - 1) {
+    if (i >= maxLength - 1) {
         i = 0
     } else {
         i++
