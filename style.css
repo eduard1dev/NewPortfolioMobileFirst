@@ -51,17 +51,22 @@ header {
     z-index: 20;
 }
 
-button {
+a.button {
     padding: 0.5rem 1rem;
     background-color: transparent;
     border: solid rgba(250, 250, 250, .35) 1px;
     border-radius: 4px;
     color: white;
     font-family: 'Poppins', sans-serif;
-    animation: onLoadOpacity 4s
+    animation: onLoadOpacity 4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
 }
 
-button.color {
+a.color {
     background-color:#32CD32;
 }
 
